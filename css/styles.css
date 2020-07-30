@@ -11,6 +11,7 @@
   --hover-color: #2196f3;
   --background-button: #f5f4fa;
   --background-color: #ffffff;
+  --background-hero: rgba(47, 48, 58, 0.8);
 }
 
 html {
@@ -53,24 +54,30 @@ ul {
   display: flex;
   height: 80px;
   align-items: center;
+  justify-content: space-between;
+  list-style: none;
 }
 
 .header-nav {
   display: flex;
   width: 570px;
-  align-items: center;
 }
 .nav-container {
   display: flex;
   padding-left: 0;
+  align-items: center;
 }
 .contacts-conteiner {
   display: flex;
   width: 370px;
-  margin-left: auto;
+  align-items: center;
   justify-content: flex-end;
   padding-left: 0;
 }
+.mail-container {
+  display: flex;
+}
+
 .nav-element {
   margin-left: 50px;
 }
@@ -94,7 +101,12 @@ ul {
 .web {
   color: var(--hover-color);
 }
-
+.mail {
+  width: 16px;
+  height: 17.2px;
+  align-items: center;
+  margin-right: 10px;
+}
 button {
   font-family: inherit;
 }
@@ -123,13 +135,17 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .contacts-conteiner .contact:hover,
 .contacts-conteiner .contact:focus {
   color: var(--hover-color);
+}
+.contacts-conteiner {
+  display: flex;
+  width: 370px;
+  margin: 0;
+  padding: 0;
 }
 /*hero*/
 .hero-titlle {
@@ -156,7 +172,19 @@ button {
   line-height: 1.9;
 }
 .background-hero {
-  background-color: var(--primary-text-color);
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .section-efect {
   padding-top: 200px;
@@ -324,7 +352,7 @@ button {
   flex-direction: column;
   align-items: start;
 }
-.footer-contacts .contact {
+.footer-contacts {
   text-decoration: none;
   color: var(--primary-text-color);
   font-family: Roboto;
@@ -333,6 +361,19 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.mail-footer,
+.contact-footer {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .footer-contacts {
