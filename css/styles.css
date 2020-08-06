@@ -51,6 +51,7 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .web-container {
   display: flex;
   height: 80px;
@@ -126,7 +127,9 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
+.current {
+  color: #2196f3;
+}
 .contacts-conteiner .contact {
   text-decoration: none;
   color: var(--primary-text-color);
